@@ -1,6 +1,6 @@
 
 After a fair bit of work, I was able to get the open sourced [Serious Sam Engine](https://github.com/ptitSeb/Serious-Engine) working in the browser.
-This project was a great learning experience and the result is runs fairly smoothly.
+This project was a great learning experience and the result runs fairly smoothly.
 
 
 [![Serious Sam Engine Browser Gameplay](public/ssam.gif)](https://martinmullins.github.io/ssam)
@@ -21,5 +21,3 @@ Here's a quick summary of the steps involved porting the code base to emscripten
 * Ensure static build works (except for libraries provided by emscripten)
 * Use [gl4es](https://github.com/ptitSeb/gl4es/) library that translates/maps the OpenGL calls to OpenGL ES.
 * Replace the infinite main loop with function to be called at the desired FPS from emscripten (`emscripten_set_main_loop(..)`)
-
-{% include iframe.html src='https://martinmullins.github.io/ssam' %}
