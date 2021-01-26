@@ -1,8 +1,13 @@
 
 After a fair bit of work, I was able to get the open sourced [Serious Sam Engine](https://github.com/ptitSeb/Serious-Engine) working in the browser.
 This project was a great learning experience and the result is runs fairly smoothly.
+
+
+[![Serious Sam Engine Browser Gameplay](public/ssam.gif)](https://martinmullins.github.io/ssam)
+
 * [Github source](https://github.com/martinmullins/Serious-Engine)
-* I have embedded the game below or you can load it [directly here](https://martinmullins.github.io/ssam)
+* [Try it out](https://martinmullins.github.io/ssam)
+
 
 Things that don't work in the build:
 * Mutliplayer
