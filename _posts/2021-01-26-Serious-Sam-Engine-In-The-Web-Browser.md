@@ -12,9 +12,9 @@ Things that don't work in the build:
 The overall process is to use [Emscripten](emscripten.org) to compile the engine source code into wasm/js runtime.
 Here's a quick summary of the steps involved porting the code base to emscripten:
 * Remove threaded code (already done)
-* Ensure the can be built as 32bit (already done)
-* Ensure the game can be built statically (except for libraries provided by emscripten)
-* Use [gl4es](https://github.com/ptitSeb/gl4es/) library to map the opengl calls to openglES
+* Ensure 32bit build works (already done)
+* Ensure static build works (except for libraries provided by emscripten)
+* Use [gl4es](https://github.com/ptitSeb/gl4es/) library that translates/maps the OpenGL calls to OpenGL ES.
 * Replace the infinite main loop with function to be called at the desired FPS from emscripten (`emscripten_set_main_loop(..)`)
 
 {% include iframe.html src='https://martinmullins.github.io/ssam' %}
