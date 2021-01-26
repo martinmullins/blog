@@ -1,0 +1,16 @@
+<div class="embed-click">
+  <iframe frameborder="0" data-src="{{ include.src }}"></iframe>
+  <button class="button-play" ></button>
+  <script>
+    (function() {
+      const script = document.currentScript;
+      const button = script.parentElement.querySelector('button');
+      button.addEventListener('click', () => {
+        button.style.display = 'none';
+        const frame = script.parentElement.querySelector('iframe');
+        frame.src = frame.dataset.src;
+      });
+    })()
+  </script>
+</div>
+

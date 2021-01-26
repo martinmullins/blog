@@ -2,7 +2,7 @@
 title:               Martin
 tagline:             ''
 description:         ''
-url:                 https://martinmullins.github.io/blog
+url:                 https://martinmullins.github.io
 baseurl:             '/blog'
 paginate:            5
 permalink:           pretty
