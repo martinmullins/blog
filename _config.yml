@@ -22,4 +22,4 @@ google_analytics_id: #UA-XXXX-Y
 # Lead capture — formspree.io forwards submissions to mmullins@possiblenull.com
 # Sign up at formspree.io, create a form, paste your form ID here
 # e.g. if your endpoint is https://formspree.io/f/xdoqkabz then set: xdoqkabz
-formspree_id:        YOUR_FORMSPREE_ID
+formspree_id:        xkolrzpb
