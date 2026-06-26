@@ -1,0 +1,377 @@
+/*
+ * Possible — Legacy Software Recovery
+ * Business site styles layered on top of Lanyon/Poole base.
+ */
+
+/* ---- Wider container for business pages ---- */
+.wide .container,
+.home-layout .container {
+  max-width: 52rem;
+}
+@media (min-width: 38em) {
+  .wide .container,
+  .home-layout .container {
+    max-width: 58rem;
+  }
+}
+@media (min-width: 56em) {
+  .wide .container,
+  .home-layout .container {
+    max-width: 64rem;
+  }
+}
+
+/* ---- Hero ---- */
+.hero {
+  background-color: #1a1a2e;
+  color: #fff;
+  padding: 4rem 1rem 3rem;
+  margin: -3rem -1rem 3rem;
+  text-align: center;
+}
+.hero-tagline {
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  letter-spacing: -.02em;
+}
+@media (min-width: 38em) {
+  .hero-tagline {
+    font-size: 3rem;
+  }
+}
+.hero-sub {
+  font-size: 1.1rem;
+  color: rgba(255,255,255,.75);
+  max-width: 36rem;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+.hero-ctas {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ---- Buttons ---- */
+.btn {
+  display: inline-block;
+  padding: .75rem 1.75rem;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: .3rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color .15s, color .15s;
+  border: 2px solid transparent;
+}
+.btn-primary {
+  background-color: #e05a1e;
+  color: #fff;
+  border-color: #e05a1e;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #c44c16;
+  border-color: #c44c16;
+  color: #fff;
+  text-decoration: none;
+}
+.btn-outline {
+  background-color: transparent;
+  color: #fff;
+  border-color: rgba(255,255,255,.6);
+}
+.btn-outline:hover,
+.btn-outline:focus {
+  background-color: rgba(255,255,255,.1);
+  color: #fff;
+  text-decoration: none;
+}
+.btn-dark {
+  background-color: #1a1a2e;
+  color: #fff;
+  border-color: #1a1a2e;
+}
+.btn-dark:hover,
+.btn-dark:focus {
+  background-color: #0f0f1e;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ---- Section blocks ---- */
+.section {
+  margin-bottom: 3.5rem;
+}
+.section-title {
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 1rem;
+  padding-bottom: .5rem;
+  border-bottom: 3px solid #e05a1e;
+  display: inline-block;
+}
+
+/* ---- Pain points grid ---- */
+.pain-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+@media (min-width: 38em) {
+  .pain-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 56em) {
+  .pain-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.pain-card {
+  background: #f8f8f8;
+  border-left: 4px solid #e05a1e;
+  padding: 1.25rem 1.25rem 1rem;
+  border-radius: 0 .3rem .3rem 0;
+}
+.pain-card h3 {
+  margin-top: 0;
+  font-size: 1rem;
+  color: #1a1a2e;
+}
+.pain-card p {
+  margin-bottom: 0;
+  font-size: .9rem;
+  color: #555;
+}
+
+/* ---- Solutions grid ---- */
+.solutions-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+@media (min-width: 38em) {
+  .solutions-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 56em) {
+  .solutions-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.solution-card {
+  border: 1px solid #e5e5e5;
+  border-radius: .4rem;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: box-shadow .15s, border-color .15s;
+}
+.solution-card:hover,
+.solution-card:focus {
+  box-shadow: 0 4px 16px rgba(0,0,0,.1);
+  border-color: #e05a1e;
+  text-decoration: none;
+  color: inherit;
+}
+.solution-card h3 {
+  margin-top: 0;
+  color: #1a1a2e;
+  font-size: 1.05rem;
+}
+.solution-card p {
+  margin-bottom: 0;
+  font-size: .875rem;
+  color: #666;
+}
+.solution-card .card-cta {
+  display: inline-block;
+  margin-top: .75rem;
+  font-size: .85rem;
+  color: #e05a1e;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+/* ---- Outcomes list ---- */
+.outcomes-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 1.5rem;
+}
+.outcomes-list li {
+  padding: .4rem 0 .4rem 1.75rem;
+  position: relative;
+  font-size: .95rem;
+}
+.outcomes-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #e05a1e;
+  font-weight: 700;
+}
+
+/* ---- Lead capture form ---- */
+.lead-form {
+  background: #f4f6f8;
+  border: 1px solid #dde1e6;
+  border-radius: .5rem;
+  padding: 2rem;
+  margin-top: 1.5rem;
+}
+.lead-form h3 {
+  margin-top: 0;
+  color: #1a1a2e;
+}
+.form-group {
+  margin-bottom: 1.1rem;
+}
+.form-group label {
+  display: block;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-size: .875rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: .35rem;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: .6rem .8rem;
+  border: 1px solid #ccc;
+  border-radius: .3rem;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #333;
+  background: #fff;
+  transition: border-color .15s;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #e05a1e;
+  box-shadow: 0 0 0 2px rgba(224,90,30,.15);
+}
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0 1rem;
+}
+@media (min-width: 38em) {
+  .form-row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.form-note {
+  font-size: .8rem;
+  color: #888;
+  margin-top: 1rem;
+}
+
+/* ---- Assessment deliverables ---- */
+.deliverables-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+@media (min-width: 38em) {
+  .deliverables-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.deliverable-item {
+  padding: 1rem 1rem 1rem 1.25rem;
+  border-left: 3px solid #1a1a2e;
+  background: #f8f8f8;
+}
+.deliverable-item h4 {
+  margin-top: 0;
+  margin-bottom: .25rem;
+  font-size: .95rem;
+  color: #1a1a2e;
+}
+.deliverable-item p {
+  margin: 0;
+  font-size: .85rem;
+  color: #666;
+}
+
+/* ---- Segments / urgency badges ---- */
+.badge {
+  display: inline-block;
+  padding: .2rem .65rem;
+  border-radius: 1rem;
+  font-size: .75rem;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+.badge-urgent {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+.badge-stable {
+  background-color: #e0f2fe;
+  color: #0369a1;
+}
+
+/* ---- Page intro ---- */
+.page-intro {
+  font-size: 1.15rem;
+  color: #555;
+  margin-bottom: 2rem;
+  line-height: 1.65;
+  border-left: 4px solid #e05a1e;
+  padding-left: 1rem;
+}
+
+/* ---- Highlight box ---- */
+.highlight-box {
+  background: #1a1a2e;
+  color: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: .4rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+.highlight-box p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+.highlight-box strong {
+  color: #f9a37a;
+}
+
+/* ---- Masthead update for business ---- */
+.masthead-title a {
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: -.01em;
+}
+.masthead-title small {
+  font-size: 70%;
+  color: #e05a1e;
+}

@@ -1,37 +1,110 @@
 ---
-layout: default
+layout: home
 title: Home
+description: "We recover, understand, and modernize legacy software when source code is missing and support has ended. Data recovery, architecture documentation, business rule extraction, and modernization for VB6, PowerBuilder, FoxPro, AccountEdge, and more."
 ---
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url | absolute_url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-
-    {{ post.content }}
+<div class="hero">
+  <h1 class="hero-tagline">Software doesn't die.<br>Vendors do.</h1>
+  <p class="hero-sub">We recover, understand, and modernize legacy software when source code is missing and the original developers are gone.</p>
+  <div class="hero-ctas">
+    <a href="/assessment/" class="btn btn-primary">Request Assessment</a>
+    <a href="#contact" class="btn btn-outline">Tell Us Your Problem</a>
   </div>
-  {% endfor %}
 </div>
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ paginator.next_page_path | absolute_url }}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ '/' | absolute_url }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ paginator.previous_page_path | absolute_url }}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
+<div class="section">
+  <h2 class="section-title">The problem is real</h2>
+  <p>Thousands of Australian businesses are running software that nobody can maintain. The vendor closed. The developer retired. A Windows upgrade broke something critical. The data is trapped and there's no way out.</p>
+
+  <div class="pain-grid">
+    <div class="pain-card">
+      <h3>No source code</h3>
+      <p>The original developer left and took the code with them — or it was never handed over. The software runs, but nobody can change it.</p>
+    </div>
+    <div class="pain-card">
+      <h3>Vendor disappeared</h3>
+      <p>The company that built your software shut down or abandoned the product. Updates stopped. Support stopped. You're on your own.</p>
+    </div>
+    <div class="pain-card">
+      <h3>Data held hostage</h3>
+      <p>Years of business data locked inside a proprietary format. You can't export it, you can't migrate it, and you can't move forward without it.</p>
+    </div>
+    <div class="pain-card">
+      <h3>Nobody understands it</h3>
+      <p>The software works — but why? What business rules does it encode? What happens if it breaks? Nobody in the organisation can answer.</p>
+    </div>
+    <div class="pain-card">
+      <h3>Upgrades break things</h3>
+      <p>A Windows update, a server migration, or a new machine and suddenly a business-critical system stops working. No support. No fix.</p>
+    </div>
+    <div class="pain-card">
+      <h3>Modernisation blocked</h3>
+      <p>You want to move to a modern platform but can't because nobody knows what the old system does. Migration is too risky without documentation.</p>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2 class="section-title">What we do</h2>
+  <p>We specialise in recovering value from software where the normal options don't apply. We don't need source code. We work from what exists — the running application, the data files, the executables — and reconstruct what you need to move forward.</p>
+
+  <p>We focus on outcomes, not technology:</p>
+
+  <ul class="outcomes-list">
+    <li>Extracting and migrating data from legacy file formats</li>
+    <li>Documenting undocumented systems so you understand what you own</li>
+    <li>Producing architecture diagrams and database schemas</li>
+    <li>Identifying and capturing embedded business rules and calculations</li>
+    <li>Creating modernisation roadmaps with realistic risk assessments</li>
+    <li>Rebuilding critical systems on supported, maintainable platforms</li>
+  </ul>
+
+  <div class="highlight-box">
+    <p>We don't charge for hope. Every engagement starts with a <strong>fixed-scope assessment</strong> so you know exactly what you're getting before committing to anything larger.</p>
+  </div>
+</div>
+
+<div class="section">
+  <h2 class="section-title">Who we help</h2>
+  <div class="solutions-grid">
+    <a href="/solutions/accountedge-recovery/" class="solution-card">
+      <h3>AccountEdge / MYOB Recovery</h3>
+      <p>AccountEdge was decommissioned. Years of accounting data, payroll records, and transaction history may be trapped in legacy files.</p>
+      <span class="card-cta">Recover your data &rarr;</span>
+    </a>
+    <a href="/solutions/vb6-modernization/" class="solution-card">
+      <h3>VB6 Modernization</h3>
+      <p>Visual Basic 6 applications still running critical business processes, but the developers are retired and nobody understands the code.</p>
+      <span class="card-cta">Modernize your app &rarr;</span>
+    </a>
+    <a href="/solutions/powerbuilder-migration/" class="solution-card">
+      <h3>PowerBuilder Migration</h3>
+      <p>Legacy enterprise PowerBuilder applications with no available developers, facing platform end-of-life and rising operational risk.</p>
+      <span class="card-cta">Plan your migration &rarr;</span>
+    </a>
+    <a href="/solutions/foxpro-modernization/" class="solution-card">
+      <h3>FoxPro Modernization</h3>
+      <p>FoxPro and Visual FoxPro applications common in manufacturing, distribution, and small business — unsupported since 2015.</p>
+      <span class="card-cta">Modernize your system &rarr;</span>
+    </a>
+    <a href="/solutions/legacy-software-recovery/" class="solution-card">
+      <h3>Legacy Windows Applications</h3>
+      <p>32-bit applications, custom ERP systems, or bespoke tools built by developers who are no longer available. We work with what you have.</p>
+      <span class="card-cta">Recover your system &rarr;</span>
+    </a>
+    <a href="/assessment/" class="solution-card">
+      <h3>Not sure? Start here.</h3>
+      <p>If you have a legacy software problem and you're not sure where to start, a fixed-scope assessment is the lowest-risk way to find out what's possible.</p>
+      <span class="card-cta">Request an assessment &rarr;</span>
+    </a>
+  </div>
+</div>
+
+<div class="section" id="contact">
+  {% include contact-form.html
+     title="Tell us about your software"
+     intro="Describe the situation and we'll respond within one business day with an honest assessment of whether we can help."
+     id="home"
+  %}
 </div>

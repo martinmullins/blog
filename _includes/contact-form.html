@@ -1,0 +1,69 @@
+{% assign form_title = include.title | default: "Tell Us About Your Software" %}
+{% assign form_intro = include.intro | default: "Describe the software you need help with. We'll respond within one business day." %}
+{% assign show_segment = include.show_segment | default: true %}
+
+<div class="lead-form">
+  <h3>{{ form_title }}</h3>
+  <p>{{ form_intro }}</p>
+
+  <form action="https://formspree.io/f/{{ site.formspree_id }}" method="POST">
+    <input type="hidden" name="_subject" value="Legacy Software Enquiry — {{ page.title }}">
+    <input type="hidden" name="_next" value="{{ '/thank-you/' | absolute_url }}">
+    {% if include.segment %}
+    <input type="hidden" name="segment" value="{{ include.segment }}">
+    {% endif %}
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="name-{{ include.id | default: 'main' }}">Your Name *</label>
+        <input type="text" id="name-{{ include.id | default: 'main' }}" name="name" required placeholder="Jane Smith">
+      </div>
+      <div class="form-group">
+        <label for="email-{{ include.id | default: 'main' }}">Work Email *</label>
+        <input type="email" id="email-{{ include.id | default: 'main' }}" name="email" required placeholder="jane@company.com">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="company-{{ include.id | default: 'main' }}">Company Name *</label>
+        <input type="text" id="company-{{ include.id | default: 'main' }}" name="company" required placeholder="Acme Pty Ltd">
+      </div>
+      <div class="form-group">
+        <label for="software-{{ include.id | default: 'main' }}">Software / Application Name *</label>
+        <input type="text" id="software-{{ include.id | default: 'main' }}" name="software" required placeholder="e.g. AccountEdge 2015, CustomApp.exe">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="users-{{ include.id | default: 'main' }}">How many users rely on this software?</label>
+        <select id="users-{{ include.id | default: 'main' }}" name="users">
+          <option value="">Select...</option>
+          <option value="1-5">1–5 users</option>
+          <option value="6-20">6–20 users</option>
+          <option value="21-100">21–100 users</option>
+          <option value="100+">100+ users</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="urgency-{{ include.id | default: 'main' }}">How urgent is this?</label>
+        <select id="urgency-{{ include.id | default: 'main' }}" name="urgency">
+          <option value="">Select...</option>
+          <option value="critical">Critical — affecting operations now</option>
+          <option value="high">High — needs resolution within weeks</option>
+          <option value="medium">Medium — planning ahead</option>
+          <option value="low">Low — early research</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="problem-{{ include.id | default: 'main' }}">Describe your situation *</label>
+      <textarea id="problem-{{ include.id | default: 'main' }}" name="problem" required placeholder="What software are you running? What's the problem — missing source code, unsupported vendor, broken upgrade, data locked in old files? What outcome do you need?"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-dark">Send Enquiry</button>
+    <p class="form-note">Your contact details are never shared or sold. We respond within one business day.</p>
+  </form>
+</div>

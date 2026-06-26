@@ -1,38 +1,26 @@
-<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
-     styles, `#sidebar-checkbox` for behavior. -->
 <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
 
-<!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
   <div class="sidebar-item">
     <p>{{ site.description }}</p>
   </div>
 
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item{% if page.title == 'Home' %} active{% endif %}" href="{{ '/' | absolute_url }}">Home</a>
+    <a class="sidebar-nav-item{% if page.url == '/' %} active{% endif %}" href="{{ '/' | absolute_url }}">Home</a>
+    <a class="sidebar-nav-item{% if page.url contains '/assessment' %} active{% endif %}" href="{{ '/assessment/' | absolute_url }}">Request Assessment</a>
 
-    {% comment %}
-      The code below dynamically generates a sidebar nav of pages with
-      `layout: page` in the front-matter. See readme for usage.
-    {% endcomment %}
+    <span class="sidebar-nav-item" style="font-size:.75rem;opacity:.5;padding-top:.75rem;padding-bottom:.25rem;display:block;">SOLUTIONS</span>
 
-    {% assign pages_list = site.pages | sort:"url" %}
-    {% for node in pages_list %}
-      {% if node.title != null %}
-        {% if node.layout == "page" %}
-          <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url | absolute_url }}">{{ node.title }}</a>
-        {% endif %}
-      {% endif %}
-    {% endfor %}
+    <a class="sidebar-nav-item{% if page.url contains 'legacy-software-recovery' %} active{% endif %}" href="{{ '/solutions/legacy-software-recovery/' | absolute_url }}">Legacy Software Recovery</a>
+    <a class="sidebar-nav-item{% if page.url contains 'accountedge' %} active{% endif %}" href="{{ '/solutions/accountedge-recovery/' | absolute_url }}">AccountEdge / MYOB Recovery</a>
+    <a class="sidebar-nav-item{% if page.url contains 'vb6' %} active{% endif %}" href="{{ '/solutions/vb6-modernization/' | absolute_url }}">VB6 Modernization</a>
+    <a class="sidebar-nav-item{% if page.url contains 'powerbuilder' %} active{% endif %}" href="{{ '/solutions/powerbuilder-migration/' | absolute_url }}">PowerBuilder Migration</a>
+    <a class="sidebar-nav-item{% if page.url contains 'foxpro' %} active{% endif %}" href="{{ '/solutions/foxpro-modernization/' | absolute_url }}">FoxPro Modernization</a>
 
-    <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
-    <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
-    <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
+    <a class="sidebar-nav-item{% if page.url contains '/about' %} active{% endif %}" href="{{ '/about/' | absolute_url }}">About</a>
   </nav>
 
   <div class="sidebar-item">
-    <p>
-      &copy; {{ site.time | date: '%Y' }}. All rights reserved.
-    </p>
+    <p>&copy; {{ site.time | date: '%Y' }} Possible. All rights reserved.</p>
   </div>
 </div>
