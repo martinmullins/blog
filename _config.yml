@@ -16,7 +16,7 @@ plugins:
   - jekyll-target-blank
 
 # Custom vars
-version:             2.0.0
+version:             2.0.1
 google_analytics_id: #UA-XXXX-Y
 
 # Lead capture — formspree.io forwards submissions to mmullins@possiblenull.com
