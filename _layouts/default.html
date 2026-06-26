@@ -1,29 +1,23 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
   {% include head.html %}
+  <body>
 
-  <body class="wide">
+    <nav class="site-nav">
+      <a href="{{ '/' | absolute_url }}" class="nav-logo">possible<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="{{ '/assessment/' | absolute_url }}">Assessment</a></li>
+        <li><a href="{{ '/solutions/legacy-software-recovery/' | absolute_url }}">Solutions</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="{{ '/assessment/' | absolute_url }}" class="nav-cta">Get Started</a></li>
+      </ul>
+    </nav>
 
-    {% include sidebar.html %}
+    {{ content }}
 
-    <label class="sidebar-toggle" for="sidebar-checkbox"></label>
+    <footer class="site-footer">
+      <p>&copy; {{ site.time | date: '%Y' }} Possible &middot; Legacy Software Recovery &middot; Australia</p>
+    </footer>
 
-    <div class="wrap">
-      <div class="masthead">
-        <div class="container">
-          <h3 class="masthead-title">
-            <a href="{{ '/' | absolute_url }}" title="Home">{{ site.title }}</a>
-            <small>{{ site.tagline }}</small>
-          </h3>
-        </div>
-      </div>
-
-      <div class="container content">
-        {{ content }}
-      </div>
-    </div>
-
-    <script src="{{ '/public/js/script.js' | absolute_url }}"></script>
   </body>
 </html>
