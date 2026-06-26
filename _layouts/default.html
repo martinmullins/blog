@@ -4,19 +4,22 @@
   <body>
 
     <nav class="site-nav">
-      <a href="{{ '/' | absolute_url }}" class="nav-logo">possible<span>.</span></a>
+      <a href="{{ '/' | absolute_url }}" class="nav-logo">Possible</a>
       <ul class="nav-links">
         <li><a href="{{ '/assessment/' | absolute_url }}">Assessment</a></li>
         <li><a href="{{ '/solutions/legacy-software-recovery/' | absolute_url }}">Solutions</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="{{ '/assessment/' | absolute_url }}" class="nav-cta">Get Started</a></li>
+        <li><a href="{{ '/assessment/' | absolute_url }}" class="nav-cta">Get started</a></li>
       </ul>
     </nav>
 
     {{ content }}
 
     <footer class="site-footer">
-      <p>&copy; {{ site.time | date: '%Y' }} Possible &middot; Legacy Software Recovery &middot; Australia</p>
+      <div class="footer-inner">
+        <span class="footer-logo">Possible</span>
+        <p>&copy; {{ site.time | date: '%Y' }} Possible &middot; Legacy Software Recovery &middot; Australia</p>
+      </div>
     </footer>
 
   </body>
