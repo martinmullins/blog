@@ -3,22 +3,43 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>
-    {% if page.title == "Home" %}
-      {{ site.title }} &middot; {{ site.tagline }}
-    {% else %}
-      {{ page.title }} &middot; {{ site.title }}
-    {% endif %}
-  </title>
+  {% assign page_title = page.title == 'Home' ? site.title | append: ' · ' | append: site.tagline : page.title | append: ' · ' | append: site.title %}
+  {% assign page_desc = page.description | default: site.description %}
+  {% assign page_url = page.url | absolute_url %}
 
-  {% if page.description %}
-  <meta name="description" content="{{ page.description }}">
-  {% elsif site.description %}
-  <meta name="description" content="{{ site.description }}">
-  {% endif %}
+  <title>{{ page_title }}</title>
+  <meta name="description" content="{{ page_desc }}">
+  <link rel="canonical" href="{{ page_url }}">
 
-  {% if page.url and site.url %}
-  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <!-- Open Graph -->
+  <meta property="og:type" content="{% if page.layout == 'home' %}website{% else %}article{% endif %}">
+  <meta property="og:title" content="{{ page_title }}">
+  <meta property="og:description" content="{{ page_desc }}">
+  <meta property="og:url" content="{{ page_url }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:locale" content="en_AU">
+  {% if site.og_image %}<meta property="og:image" content="{{ site.og_image }}">{% endif %}
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ page_title }}">
+  <meta name="twitter:description" content="{{ page_desc }}">
+  {% if site.og_image %}<meta name="twitter:image" content="{{ site.og_image }}">{% endif %}
+
+  <!-- Structured data -->
+  {% if page.layout == 'home' %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Possible",
+    "description": "Legacy software recovery and modernisation for Australian businesses. I recover and document software when source code is missing, vendors have disappeared, or the original developer is gone.",
+    "url": "https://possiblenull.com",
+    "areaServed": { "@type": "Country", "name": "Australia" },
+    "serviceType": ["Legacy Software Recovery", "Software Modernisation", "Data Recovery", "Software Documentation"],
+    "knowsAbout": ["VB6", "Visual Basic 6", "PowerBuilder", "FoxPro", "Visual FoxPro", "AccountEdge", "MYOB", "Legacy Windows Applications"]
+  }
+  </script>
   {% endif %}
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
