@@ -1,7 +1,7 @@
 ---
 layout: page
 title: PowerBuilder Application Migration
-description: "Legacy PowerBuilder applications present real migration risk — scarce developers, aging infrastructure, and business logic that exists only inside the application. We document, analyse, and plan PowerBuilder migrations."
+description: "Legacy PowerBuilder applications present real migration risk — scarce developers, aging infrastructure, and business logic that exists only inside the application. I document, analyse, and plan PowerBuilder migrations."
 ---
 
 <p class="page-intro">PowerBuilder applications power core business processes at organisations that have been running them for 20 or 30 years. The platform is not dead, but the developer pool is shrinking fast — and the business logic locked inside these systems is irreplaceable.</p>
@@ -19,9 +19,9 @@ Those systems are now running on infrastructure that was never designed to last 
 
 This creates a paralysis that many organisations have lived with for years. The system is too risky to migrate, and too risky to keep.
 
-## What we do
+## What I do
 
-We break the paralysis. We analyse the application — with or without source code — and produce the documentation and planning you need to make migration achievable.
+I break the paralysis. I analyse the application — with or without source code — and produce the documentation and planning you need to make migration achievable.
 
 <ul class="outcomes-list">
   <li>Application architecture documentation — datawindows, business objects, workflows</li>
@@ -45,13 +45,13 @@ We break the paralysis. We analyse the application — with or without source co
 
 ## Starting with assessment
 
-A migration of a complex PowerBuilder system should never start with "build the replacement." It should start with "understand the original." Our assessment service produces the foundation documentation that makes everything else possible.
+A migration of a complex PowerBuilder system should never start with "build the replacement." It should start with "understand the original." The assessment produces the foundation documentation that makes everything else possible.
 
 ---
 
 {% include contact-form.html
-   title="Tell us about your PowerBuilder system"
-   intro="What does the application do? How many users depend on it? What's driving the need to migrate? We'll respond with an honest assessment of the options and effort involved."
+   title="Tell me about your PowerBuilder system"
+   intro="What does the application do? How many users depend on it? What's driving the need to migrate? I'll respond with an honest assessment of the options and effort involved."
    id="powerbuilder"
    segment="PowerBuilder Migration"
 %}

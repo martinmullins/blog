@@ -1,7 +1,7 @@
 ---
 layout: page
 title: VB6 Application Modernization
-description: "Visual Basic 6 applications are a ticking clock. Microsoft ended support in 2008. If your business depends on a VB6 application and nobody understands the code, we can document it, extract the business logic, and create a modernization plan."
+description: "Visual Basic 6 applications are a ticking clock. Microsoft ended support in 2008. If your business depends on a VB6 application and nobody understands the code, I can document it, extract the business logic, and create a modernization plan."
 ---
 
 <p class="page-intro">Visual Basic 6 Microsoft ended mainstream support in 2008. Extended support ended in 2015. If your business is still running a VB6 application — and many are — you are one Windows update away from a crisis.</p>
@@ -19,9 +19,9 @@ The application works — for now. But:
 - Nobody can add features or fix bugs
 - Nobody knows what it actually does or why
 
-## What we do
+## What I do
 
-We analyse your VB6 application and produce documentation that makes the system understandable — and makes modernization achievable.
+I analyse your VB6 application and produce documentation that makes the system understandable — and makes modernization achievable.
 
 <ul class="outcomes-list">
   <li>Document the application's architecture — screens, modules, data flows</li>
@@ -32,7 +32,7 @@ We analyse your VB6 application and produce documentation that makes the system 
   <li>Deliver a risk-ranked migration plan with realistic effort estimates</li>
 </ul>
 
-## Common situations we work with
+## Common situations I work with
 
 **The retired developer scenario.** The developer who built the system retired or left years ago. The application runs, but nobody in the business can explain what it does. A Windows upgrade broke something and there's nobody to call.
 
@@ -40,20 +40,20 @@ We analyse your VB6 application and produce documentation that makes the system 
 
 **The migration roadblock.** Management wants to modernize. The decision has been made. But the migration project stalled because nobody could document the requirements — because the requirements are all inside the application.
 
-## What we need
+## What I need
 
 - Access to the running application (preferred) or the executable files
 - Any source code that's available — even partial
 - Any documentation that exists, even if incomplete
 - A conversation with someone who uses the system daily
 
-We can work with executables alone if source code is unavailable.
+I can work with executables alone if source code is unavailable.
 
 ---
 
 {% include contact-form.html
-   title="Tell us about your VB6 application"
-   intro="Describe the application, how it's used, and what problem you need to solve. We'll respond with an honest assessment of the options."
+   title="Tell me about your VB6 application"
+   intro="Describe the application, how it's used, and what problem you need to solve. I'll respond with an honest assessment of the options."
    id="vb6"
    segment="VB6 Modernization"
 %}

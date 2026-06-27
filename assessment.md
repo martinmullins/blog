@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Request an Assessment
-description: "A fixed-scope legacy software assessment. We analyse your system and deliver architecture diagrams, database analysis, technology stack identification, business rule extraction, modernisation options, and risk assessment."
+description: "A fixed-scope legacy software assessment. I analyse your system and deliver architecture diagrams, database analysis, technology stack identification, business rule extraction, modernisation options, and risk assessment."
 ---
 
-<p class="page-intro">Before committing to a modernisation or migration project, you need to understand what you're actually dealing with. Our Legacy Software Assessment is a fixed-scope engagement that gives you a clear picture of your system, your options, and the risks involved — without requiring you to hand over a large budget.</p>
+<p class="page-intro">Before committing to a modernisation or migration project, you need to understand what you're actually dealing with. The Legacy Software Assessment is a fixed-scope engagement that gives you a clear picture of your system, your options, and the risks involved — without requiring you to hand over a large budget.</p>
 
 ## What is a Legacy Software Assessment?
 
@@ -50,19 +50,19 @@ The assessment is designed for:
 - **Finance and operations teams** whose data is trapped in old file formats
 - **Technology leads** planning a modernisation project who need a starting point
 
-## What we need from you
+## What I need from you
 
 - Access to the running application (if still functional)
 - Any available data files or database files
 - Any documentation that exists (even partial)
 - A conversation with anyone who has operational knowledge of the system
 
-We work with what's available. Lack of source code and lack of documentation is the normal starting point.
+I work with what's available. Lack of source code and lack of documentation is the normal starting point.
 
 ---
 
 {% include contact-form.html
    title="Request your assessment"
-   intro="Fill in the form below and we'll contact you to discuss scope, timeline, and cost. There's no obligation — the assessment itself gives you enough information to decide what to do next."
+   intro="Fill in the form below and I'll contact you to discuss scope, timeline, and cost. There's no obligation — the assessment itself gives you enough information to decide what to do next."
    id="assessment"
 %}

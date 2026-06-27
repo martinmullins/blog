@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Legacy Software Recovery
-description: "If your business is running software that nobody can maintain — no source code, no vendor, no developer — we can analyse the application, extract what you need, and create a path forward."
+description: "If your business is running software that nobody can maintain — no source code, no vendor, no developer — I can analyse the application, extract what you need, and create a path forward."
 ---
 
 <p class="page-intro">Not all legacy software fits a category. If your business is running a custom application, a 32-bit Windows tool, or any software where the source code is missing and the people who built it are gone — this is where to start.</p>
@@ -18,11 +18,11 @@ Legacy software problems follow a pattern, regardless of the platform or languag
 
 At that point, the business faces a question it can't easily answer: what would it actually take to understand, recover, or replace this system?
 
-We answer that question.
+I answer that question.
 
-## What we work with
+## What I work with
 
-We've built capability to analyse Windows desktop applications, custom-built tools, and bespoke business software regardless of what they were originally built with. We work from what exists:
+I've built capability to analyse Windows desktop applications, custom-built tools, and bespoke business software regardless of what they were originally built with. I work from what exists:
 
 <ul class="outcomes-list">
   <li>The running application — behaviour, screens, data flows</li>
@@ -32,9 +32,9 @@ We've built capability to analyse Windows desktop applications, custom-built too
   <li>Operational knowledge from the people who use the system daily</li>
 </ul>
 
-## What we deliver
+## What I deliver
 
-Depending on what you need, we can deliver:
+Depending on what you need, I can deliver:
 
 <ul class="outcomes-list">
   <li><strong>System documentation</strong> — what the application does, how it works, what business processes it supports</li>
@@ -45,7 +45,7 @@ Depending on what you need, we can deliver:
   <li><strong>Migration planning</strong> — a structured plan for replacing the system if that's the right call</li>
 </ul>
 
-## We start with an assessment
+## Starting with an assessment
 
 Every engagement starts with a fixed-scope assessment. This isn't a vague "discovery phase" — it's a structured analysis with defined deliverables that gives you concrete information about your system and your options.
 
@@ -59,7 +59,7 @@ The assessment is scoped so that you know what you're getting before you commit.
 
 {% include contact-form.html
    title="Describe your software situation"
-   intro="Tell us what you're running, what the problem is, and what outcome you need. There's no minimum complexity — if it's a real problem for your business, we want to hear about it."
+   intro="Tell me what you're running, what the problem is, and what outcome you need. If it's a real problem for your business, I want to hear about it."
    id="legacy"
    segment="Legacy Software Recovery"
 %}
